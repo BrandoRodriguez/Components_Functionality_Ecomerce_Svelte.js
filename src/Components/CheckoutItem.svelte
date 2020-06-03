@@ -3,29 +3,26 @@
   import { fly } from "svelte/transition";
 
   export let item;
-  let { 
-    
-   name,
-   img,
-   img1,
-   img2,
-   img3,
-   descripcion,
-   marca,
-   ancho,
-   profundidad,
-   alto,
-   material,
-   Tipodeconexión,
-   peso,
-   precio,
-   precioantes,
-   oferta,
-   categoriageneral,
-   categoria,
-   count
-  
-  
+  let {
+    name,
+    img,
+    img1,
+    img2,
+    img3,
+    descripcion,
+    marca,
+    ancho,
+    profundidad,
+    alto,
+    material,
+    Tipodeconexión,
+    peso,
+    precio,
+    precioantes,
+    oferta,
+    categoriageneral,
+    categoria,
+    count
   } = item;
   $: doubled = count * precio;
 
@@ -170,7 +167,7 @@
   }
 </style>
 
-<div 
+<div
   style="position: relative; overflow: hidden; width: 100%; height: auto;
   min-height: 0px; max-height: 100vh; border-bottom: 1px solid rgb(247, 247,
   247); font-family: Lato, sans-serif;">
@@ -239,9 +236,7 @@
           <span class="CartItemstyle__Price-sc-1otw30s-4 effwGm">
             S/.{precio}.00
           </span>
-          <span class="CartItemstyle__Weight-sc-1otw30s-5 cYyRFl">
-            {marca}
-          </span>
+          <span class="CartItemstyle__Weight-sc-1otw30s-5 cYyRFl">{marca}</span>
         </div>
         <span class="CartItemstyle__Total-sc-1otw30s-6 cLjIxt">
           S./{doubled}
